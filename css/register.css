@@ -1,0 +1,119 @@
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+  }
+  
+  body {
+	font-family: 'Nunito', sans-serif;
+	color: #384047;
+  }
+  
+  #form-set form {
+	max-width: 300px;
+	margin: 10px auto;
+	padding: 10px 20px;
+	background: #dde7eb;
+	border-radius: 8px;
+  }
+  
+  #form-set h1 {
+	margin: 0 0 30px 0;
+	text-align: center;
+	font-size: 45px;
+	letter-spacing: 2px;
+  }
+  
+  #form-set input[type="text"],
+  #form-set input[type="password"],
+  #form-set input[type="date"],
+  #form-set input[type="datetime"],
+  #form-set input[type="email"],
+  #form-set input[type="number"],
+  #form-set input[type="search"],
+  #form-set input[type="tel"],
+  #form-set input[type="time"],
+  #form-set input[type="url"],
+  #form-set textarea,
+  #form-set select {
+	background: rgba(255,255,255,0.1);
+	border: none;
+	font-size: 16px;
+	height: auto;
+	margin: 0;
+	outline: 0;
+	padding: 15px;
+	width: 100%;
+	background-color: #e8eeef;
+	color: #8a97a0;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	margin-bottom: 30px;
+  }
+  
+  #form-set input[type="radio"],
+  #form-set input[type="checkbox"] {
+	margin: 0 4px 8px 0;
+  }
+  
+  #form-set select {
+	padding: 6px;
+	height: 32px;
+	border-radius: 2px;
+  }
+  
+  #form-set button {
+	padding: 19px 39px 18px 39px;
+	color: #FFF;
+	background-color: #4745a5;
+	font-size: 18px;
+	text-align: center;
+	font-style: normal;
+	border-radius: 5px;
+	width: 100%;
+	border: 1px solid #4745a5;
+	border-width: 1px 1px 3px;
+	box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+	margin-bottom: 10px;
+  }
+  
+  #form-set fieldset {
+	margin-bottom: 30px;
+	border: none;
+  }
+  
+  #form-set .legend {
+	font-size: 1.4em;
+	margin-bottom: 10px;
+  }
+  
+  #form-set label {
+	display: block;
+	margin-bottom: 8px;
+  }
+  
+  #form-set label.light {
+	font-weight: 300;
+	display: inline;
+  }
+  
+  #form-set .number {
+	background-color: #4745a5;
+	color: #fff;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	font-size: 0.8em;
+	margin-right: 4px;
+	line-height: 30px;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+	border-radius: 100%;
+  }
+  
+  @media screen and (min-width: 480px) {
+  
+	#form-set form {
+	  max-width: 480px;
+	}
+  
+  }

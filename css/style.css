@@ -1,0 +1,495 @@
+ 
+
+
+
+html, body {
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root{
+
+    /*  theme fonts  */
+    --ubuntu-medium-italic:'ubuntu-medium-italic',cursive;
+    --nunito-light:'nunito-light',cursive;
+
+
+    /*  theme colour  */
+    --text-gray: #3f4954;
+    --text-light: #686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+
+    /* Grediant Color */
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    --deepblue: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    --darklightblue:linear-gradient(to top, #30cfd0 0%, #330867 100%);
+
+}
+
+/*----------- Global Classes ------------*/
+
+a{
+    text-decoration: none;
+    color: var(--text-gray);
+}
+
+ul{
+    list-style-type: none;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+h1{
+    font-family: var(--nunito-light);
+    font-size: 4.5rem;
+    letter-spacing: 1rem;
+}
+
+h3 {
+    font-family: var(--ubuntu-medium-italic);
+    font-size: 2rem;
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--ubuntu-medium-italic);
+    cursor: pointer;
+    font-weight: 500;
+
+    border: 1px solid #012880;
+    background-image: linear-gradient(-180deg, #FF89D6 0%, #C01F9E 100%);
+    box-shadow: 0 1rem 1.25rem 0 rgba(22,75,195,0.50),
+                0 -0.25rem 1.5rem rgba(110, 15, 155,1) inset,
+                0 0.75rem 0.5rem rgba(255,255,255, 0.4) inset,
+                0.0.25rem 0.5rem 0 rgba(180, 70, 207, 1) inset;
+}
+
+/*------x---- Global Classes -----x-------*/
+
+
+
+
+/*----------- Navbar ------------*/
+
+.nav {
+    background-color: #e3dada;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 8vh;
+    overflow: hidden;
+}
+
+.nav .nav-brand a{
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: var(--ubuntu-medium-italic);
+}
+
+.nav .nav-brand span{
+    color: white;
+}
+
+.nav .nav-brand:hover{
+    color: #0f0f0f;
+}
+
+.nav .nav-menu {
+    justify-content: space-between;
+}
+
+.nav .nav-items{
+    display: flex;
+    margin: 0;
+    font-family: teko-medium;
+}
+
+.nav .nav-items .nav-links{
+    padding: 1.6rem 1rem;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.nav .nav-items .nav-links a:hover{
+    color: #03045e;
+    text-decoration: underline;
+}
+
+.nav .social i:hover{
+    color: #03045e;
+}
+
+.nav .social {
+    padding: 1.4rem 0;
+}
+
+
+.nav .social i{
+    padding: 0 0.2rem;
+}
+
+.active{
+    font-weight: bolder;
+    background-color: #5e548e;
+    color: white;
+}
+
+/*-----x----- Navbar -------x----*/
+
+/*--------- main content  ------*/
+
+/*--------- Site titile -------*/
+
+main .site-title{
+    background: url('../assets/02.jpg');
+    background-size: cover;
+    height: 120vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+main .site-title .site-background {
+    padding-top: 15rem;
+    text-align: center;
+    color: var(--white);
+}
+
+main .site-title h1,h3 {
+    margin: 0.3rem;
+}
+
+main .site-title .btn{
+    margin: 1.8rem;
+    background: var(--sky);
+}
+
+main .site-title .btn:hover{
+    background: transparent;
+    border: 1px solid var(--white);
+    color: white;
+}
+
+/*-----x--- Site titile ---x--*/
+
+/*--------- Services ---------*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans');
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  background: black;
+  color: #999;
+}
+
+.service-only{
+    display: inline-block;
+}
+
+.service-only a {
+  text-decoration: none;
+  margin: 1rem 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8125rem;
+  letter-spacing: 1px;
+}
+
+.service-only p {
+  font-size: 0.9rem;
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+
+section {
+  max-width: auto;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+}
+
+.service-only h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #333;
+  font-size: 1.825rem;
+  margin: 1.3rem 0;
+}
+
+.section-lead {
+  max-width: auto;
+  margin: 1rem auto 1.5rem;
+  font-size:larger;
+ 
+}
+
+.service a {
+  color: #5b7abb;
+  display: block;
+}
+
+.service h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #56ceba;
+  font-size: 1.3rem;
+  margin: 1rem 0 0.6rem;
+}
+
+.services-grid {
+  display: flex;
+  align-items: center;
+}
+
+.service {
+  background: rgb(66, 63, 63);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+  flex: 1;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid #e7e7e7;
+  transition: all 0.3s ease;
+}
+
+.service:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+}
+
+.service i {
+  font-size: 3.45rem;
+  margin: 1rem 0;
+}
+
+.service1 i,
+.service1 h4,
+.service1 .cta {
+  color: #42b7ca;
+}
+
+.service1:hover {
+  border: 2px solid #42b7ca;
+}
+
+.service2 i,
+.service2 h4,
+.service2 .cta {
+  color: #425fca;
+}
+
+.service2:hover {
+  border: 2px solid #425fca;
+}
+
+.service3 i,
+.service3 h4,
+.service3 .cta {
+  color: #9c42ca;
+}
+
+.service3:hover {
+  border: 2px solid #9c42ca;
+}
+
+.service .cta span {
+  font-size: 0.6rem;
+}
+
+.service > * {
+  flex: 1 1 100%;
+}
+
+.service .cta {
+  align-self: flex-end;
+}
+/*----x---- Services -----x---*/
+
+/*---------  Prize details ----*/
+* {
+    margin: 0;
+    padding: 0;
+}
+#prize body {
+    background-color: #F2EEE9;
+    font: normal 13px/1.5 Georgia, Serif;
+    color: #333;
+}
+#prize .wrapper {
+    width: 1700px;
+    margin: 20px auto;
+    padding: 20px;
+}
+#prize h1 {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 4px 20px;
+    float: left;
+}
+#prize .clear {
+    clear: both;
+}
+#prize .items {
+    display: block;
+    margin: 20px 0;
+}
+#prize .item {
+    background-color:bl;
+    float: left;
+    margin: 0 10px 10px 20px;
+    width: 205px;
+    padding: 10px;
+    height: 290px;
+}
+#prize .item img {
+    display: block;
+    margin: auto;
+    height: 200px;
+    width: 200px;
+}
+#prize h2 {
+    font-size: 16px;
+    display: block;
+    border-bottom: 1px solid #ccc;
+    margin: 0 0 10px 0;
+    padding: 0 0 5px 0;
+}
+#prize button {
+    border: 1px solid #722A1B;
+    padding: 4px 14px;
+    background-color: #fff;
+    color: #722A1B;
+    text-transform: uppercase;
+    float: right;
+    margin: 5px 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+#prize span {
+    float: right;
+}
+#prize .shopping-cart {
+    display: inline-block;
+    background: url('http://cdn1.iconfinder.com/data/icons/jigsoar-icons/24/_cart.png') no-repeat 0 0;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px 0 0;
+}
+
+
+/*-----x--- main content  ---x--*/
+
+/*----------- Footer ------------*/
+
+footer.footer{
+    height: 100%;
+    background: rgb(19, 18, 18);
+    position: relative;
+}
+
+footer.footer .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer.footer .container > div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem 0.9rem;
+}
+
+footer.footer .container h2{
+    color: white;
+}
+
+footer.footer .container p{
+    color: gray;
+    text-align: justify;
+}
+
+footer.footer .newsletter .form-element{
+    background: black;
+    display: inline-flex;
+}
+
+footer.footer .newsletter .form-element input{
+    padding: 0.5rem 0.7rem;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 1rem;
+    width: 74%;
+}
+
+footer.footer .newsletter .form-element span{
+    background: var(--sky);
+    padding: 0.5rem 0.7rem;
+    cursor: pointer;
+}
+
+footer.footer .available div > img{
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    margin: 0.3rem 0.4rem;
+}
+
+footer.footer .follow div i{
+    color: white;
+    padding: 0 0.4rem;
+}
+
+footer.footer .rights h4{
+    justify-content: center;
+    font-family: var(--nunito-light);
+    color: gray;
+    font-size: larger;
+    margin-bottom: 2rem;
+    margin-left: 42rem;
+}
+
+footer.footer .rights span{
+    color: white;
+    justify-content: center;
+}
+
+footer.footer .move-up{
+    position: absolute;
+    right: 6%;
+    top: 50%;
+}
+
+footer.footer .move-up span{
+    color: #2b455f;
+}
+
+footer.footer .move-up span:hover{
+    color: #8ec5fc;
+    cursor: pointer;
+}
+/*-----x----- Footer -------x----*/
